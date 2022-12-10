@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sams', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+
+.content {
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 4px;
+  width: 80%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  background-color: #58af9b;
+  width: 40%;
+  height: 100%;
+}
+
+.title-primary {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.btn {
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #58af9b;
+  transition: background-color 0.5s;
+}
+
+.btn-second {
+}
+
+.first-column {
+  text-align: center;
+  flex: 1 0 auto;
+  z-index: 1;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2 0 auto;
+}
+
+.title-second {
+  color: #58af9b;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
